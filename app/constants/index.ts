@@ -8,6 +8,8 @@ import android from '../assets/phone android.jpeg'
 import sofa from '../assets/sofa.jpeg'
 import tv from '../assets/tv.jpeg'
 import woofer from '../assets/woofer.jpeg'
+// importing react icons
+import {FaComment, FaUser, FaUsers, FaHome, FaBuilding} from 'react-icons/fa'
 
 export const categories = [
     {
@@ -99,5 +101,37 @@ export const products = [
         image: bed,
         price: 8500,
         description: "Double decker bed "
+    },
+]
+export const navLinksandIcons = [
+    {
+        id: 1,
+        name: "Home",
+        component: FaHome,
+        href: "/"
+    },
+    {
+        id: 2,
+        name: "Rentals & Roommates",
+        component: FaBuilding,
+        href: "/houses"
+    },
+    {
+        id: 3,
+        name: "Message",
+        component: FaComment,
+        href: "/messages"
+    },
+    {
+        id: 4,
+        name: "Community",
+        component: FaUsers,
+        href: "/community"
+    },
+    {
+        id: 5,
+        name: "Account",
+        component: FaUser,
+        href: "/account"
     },
 ]
